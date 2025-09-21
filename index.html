@@ -40,12 +40,13 @@
       <a href="#industry" class="text-white hover:text-gray-200 transition">Industry</a>
       <a href="#contact" class="text-white hover:text-gray-200 transition">Contact</a>
     </div>
+   <!-- Mobile Menu Button -->
     <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
       <i data-feather="menu"></i>
     </button>
   </nav>
 
-  <!-- Mobile Dropdown Menu (absolute, full-width, no horizontal scroll) -->
+  <!-- Mobile Dropdown Menu -->
   <div id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-6 md:hidden bg-gray-800 absolute top-full left-0 w-full z-30">
     <a href="#about" class="text-white hover:text-gray-200 transition">About</a>
     <a href="#research" class="text-white hover:text-gray-200 transition">Research</a>
@@ -56,6 +57,7 @@
     <a href="#industry" class="text-white hover:text-gray-200 transition">Industry</a>
     <a href="#contact" class="text-white hover:text-gray-200 transition">Contact</a>
   </div>
+
 </header>
 
 
@@ -456,9 +458,22 @@
     });
   </script>
 
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  let isOpen = false;
+
+  menuToggle.addEventListener("click", () => {
+    isOpen = !isOpen;
+    mobileMenu.classList.toggle("hidden");
+    menuToggle.innerHTML = isOpen 
+      ? feather.icons["x"].toSvg()   // Change to "X" when open
+      : feather.icons["menu"].toSvg(); // Back to hamburger
+  });
 </script>
 </body>
 </html>
+
 
 
 
