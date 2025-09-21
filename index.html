@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayem Ul Alam | PhD Student | Electrical & Computer Engineering | University of Alabama</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <style>
+    /* UA Crimson Branding */
+    .hero-bg { background: linear-gradient(135deg, #9E1B32 0%, #6E1323 100%); }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+    .skill-pill { transition: all 0.3s ease; }
+    .skill-pill:hover { background-color: #9E1B32; color: white; }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
+  
+  <!-- Header -->
+  <header class="relative z-10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">
+          <span class="bg-[#9E1B32] px-3 py-1 rounded-lg">Research Portfolio</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-white hover:text-gray-200 transition">About</a>
+          <a href="#research" class="text-white hover:text-gray-200 transition">Research</a>
+          <a href="publications.html" class="text-white hover:text-gray-200 transition">Publications</a>
+          <a href="#awards" class="text-white hover:text-gray-200 transition">Funding</a>
+          <a href="#teaching" class="text-white hover:text-gray-200 transition">Teaching</a>
+          <a href="#skills" class="text-white hover:text-gray-200 transition">Skills</a>
+          <a href="#contact" class="text-white hover:text-gray-200 transition">Contact</a>
+        </div>
+        <button class="md:hidden text-white"><i data-feather="menu"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg relative z-10 text-white py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex items-center">
+        <!-- Left Column -->
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Hi, I'm <span class="text-gray-200">Sayem Ul Alam</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+            PhD Student in Electrical & Computer Engineering
+          </h2>
+          <p class="text-lg mb-8 text-red-100">
+            The University of Alabama | Researching Rare-Earth-Free Motor Design &amp; Control 
+            for EVs and Wind Turbines
+          </p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="bg-[#9E1B32] hover:bg-[#6E1323] text-white px-6 py-3 rounded-lg font-medium transition">Contact Me</a>
+            <a href="#research" class="border border-white hover:bg-white hover:text-[#9E1B32] text-white px-6 py-3 rounded-lg font-medium transition">My Research</a>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-[#9E1B32] rounded-full opacity-75 blur"></div>
+            <img src="img.jpg" 
+                 alt="Sayem Ul Alam" 
+                 class="relative rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- About Section -->
+<section id="about" class="bg-white relative z-10 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">About Me</h2>
+    <div class="md:flex items-center">
+      <div class="md:w-full" data-aos="fade-left">
+        <p class="text-lg mb-6">
+          I am a PhD student in Electrical and Computer Engineering at the University of Alabama, 
+          specializing in electric machine design and control. My research focuses on developing 
+          rare-earth-free permanent magnet motors for electric vehicles and wind turbines.
+        </p>
+        <p class="text-lg mb-6">
+          As a Graduate Research Assistant at the 
+          <a href="https://sites.ua.edu/shli/" target="_blank" class="text-[#9E1B32] font-semibold hover:underline">
+            Renewable Energy System Laboratory (RESyL)
+          </a>, 
+          I conduct FEM-based simulations using ANSYS Maxwell and MotorCAD to analyze torque-speed 
+          performance, efficiency maps, and rare-earth-free magnet alternatives.
+        </p>
+        <p class="text-lg mb-8">
+          Previously, I contributed to soil moisture and vegetation detection using multispectral imaging 
+          at the UA Remote Sensing Centre. I also have teaching and industry experience as a lecturer and 
+          automation engineer.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <div class="flex items-center">
+            <i data-feather="award" class="text-[#9E1B32] mr-2"></i>
+            <span><span id="pub-count">0</span> Publications</span>
+          </div>
+          <div class="flex items-center">
+            <i data-feather="book" class="text-[#9E1B32] mr-2"></i>
+            <span><span id="nsf-count">0</span> NSF-Funded Research</span>
+          </div>
+          <div class="flex items-center">
+            <i data-feather="cpu" class="text-[#9E1B32] mr-2"></i>
+            <span><span id="proj-count">0</span> Research Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Research Projects -->
+  <section id="research" class="bg-gray-50 relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Research Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rare-Earth-Free PM Motor Design -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden project-card" data-aos="fade-up">
+          <img src="electric-high-res.jpg" alt="Rare-Earth-Free PM Motor Design" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Rare-Earth-Free PM Motor Design for EVs</h3>
+            <p class="text-gray-600 mb-4">Design and optimization of non-rare-earth PMSMs using FEM simulations, benchmarking against commercial EV traction motors.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">ANSYS Maxwell</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">MotorCAD</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">EV Motors</span>
+            </div>
+          </div>
+        </div>
+        <!-- FEM Simulations -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden project-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="fem_motor_variants.jpg" alt="FEM Simulations" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">FEM Simulations of PMSM Variants</h3>
+            <p class="text-gray-600 mb-4">Conducting ANSYS Maxwell & MotorCAD simulations of SPM, IPM, SynRM, and PMSynRM motors to evaluate torque, efficiency, and demagnetization tradeoffs.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Simulation</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">SPM/IPM</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">MotorCAD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Magnetic Circuit -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden project-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="magnetic_circuit_study.jpg" alt="Magnetic Circuit Studies" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Magnetic Circuit & Demagnetization Studies</h3>
+            <p class="text-gray-600 mb-4">Investigating PM coercivity, recoil line dynamics, and demagnetization effects under armature MMF to enhance durability and performance of PMSM designs.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Magnetics</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">MMF</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Reliability</span>
+            </div>
+          </div>
+        </div>
+        <!-- Nissan Leaf PMSM Benchmark -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden project-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="nissan_leaf_pmsm.JPG" alt="Nissan Leaf PMSM" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Nissan Leaf PMSM Benchmarking</h3>
+            <p class="text-gray-600 mb-4">Simulating and analyzing the Nissan Leaf traction motor for torque-speed profiles and efficiency maps, providing benchmarks against rare-earth-free PMSMs.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Benchmark</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">EV Motors</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Efficiency</span>
+            </div>
+          </div>
+        </div>
+        <!-- Soil Moisture -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden project-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="soil_moisture_project.jpg" alt="Soil Moisture & Vegetation" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Soil Moisture & Vegetation Estimation</h3>
+            <p class="text-gray-600 mb-4">Applied multispectral camera and spectro-radiometer data to estimate soil moisture and vegetation health in agricultural and environmental contexts.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Remote Sensing</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Spectro-Radiometer</span>
+              <span class="bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">Multispectral Imaging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Research Presentations & Competitions -->
+<div class="mt-16">
+  <h3 class="text-2xl font-bold mb-8 text-center" data-aos="fade-up">Research Presentations & Competitions</h3>
+  <div class="space-y-6">
+
+    <!-- Poster 1 -->
+    <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+      <div class="md:flex items-center">
+        <div class="md:w-1/3 mb-6 md:mb-0">
+          <img src="img1.jpg" alt="Poster Presentation on PMASynR Motor" class="rounded-lg shadow-md w-full object-cover">
+        </div>
+        <div class="md:w-2/3 md:pl-8">
+          <h4 class="text-xl font-semibold mb-2">Performance of Rare-Earth-Free PMASynR Motor for Electric Vehicles: Discovered Fe₂Ni₂N Magnets</h4>
+          <p class="text-gray-600 mb-2">
+            This poster presented FEM-based analysis of a PMASynR motor using Fe₂Ni₂N magnets, a rare-earth-free alternative. 
+            The study demonstrated competitive performance for EV applications while reducing reliance on rare-earth materials.
+          </p>
+          <p class="text-gray-700"><strong>Presented by:</strong> Sayem Ul Alam, 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Poster 2 -->
+    <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+      <div class="md:flex items-center">
+        <div class="md:w-1/3 mb-6 md:mb-0">
+          <img src="img2.jpg" alt="Poster Presentation on Soil Moisture Mapping" class="rounded-lg shadow-md w-full object-cover">
+        </div>
+        <div class="md:w-2/3 md:pl-8">
+          <h4 class="text-xl font-semibold mb-2">A Convolutional Neural Network Approach to Soil Moisture Mapping Using Multispectral UAS Imagery</h4>
+          <p class="text-gray-600 mb-2">
+            We developed a CNN-based approach for estimating soil moisture using multispectral UAS imagery. 
+            The method enhances agricultural monitoring and supports precision farming through accurate soil moisture mapping.
+          </p>
+          <p class="text-gray-700"><strong>Presented by:</strong> Sayem Ul Alam, 2023</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Recent Publications -->
+  <section id="recent-publications" class="bg-white relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Recent Publications</h2>
+      <ol class="list-decimal pl-6 text-gray-800 space-y-4">
+        <li><strong>S. U. Alam</strong> et al., "Performance Analysis of Rare-Earth-Free PMASynR Motor for EVs Utilizing Fe₂Ni₂N Magnets," Manuscript in progress.</li>
+        <li>M. A. Wahed, C. D. Yeo, Y. K. Hong, M. Choi, S. Li, <strong>S. U. Alam</strong>, and S. Bae, "Changes in Electronic Structure Due to Strain: Magnetic Properties of B- and N-Doped FeNi Alloys," Submitted.</li>
+        <li>W. Dong, S. Li, Z. Liu, Y. Gao, <strong>S. U. Alam</strong>, B. Balasubramanian, Y. K. Hong, X. Shi, and A. Yebi, "Identification of IPM Motor Magnetic Model Using Neural Network with Cloud-Based Training," Manuscript in progress.</li>
+      </ol>
+      <div class="mt-10 text-center">
+        <a href="publications.html" class="inline-block bg-[#9E1B32] hover:bg-[#6E1323] text-white px-6 py-3 rounded-lg font-medium transition">View All Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding & Awards -->
+  <section id="awards" class="bg-gray-50 relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Funding & Awards</h2>
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">National Science Foundation (NSF) Project Grant</h3>
+          <p class="text-gray-600 mb-2">Award #2402634 | Engineering Program (CFDA 47.041) | Amount: <strong>US$ 1,000,000</strong></p>
+          <p class="mb-4"><strong>Title:</strong> RAISE: CET: Rare-Earth-Free Magnets and AI-Driven Control for Power Generation, Transmission, and Grid Integration of Offshore Wind.</p>
+          <span class="inline-block bg-[#9E1B32] text-white px-3 py-1 rounded-full text-sm">NSF</span>
+          <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Awarded 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="bg-white relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Teaching Experience</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Graduate Teaching Assistant</h3>
+          <p class="text-gray-600 mb-2">Department of Electrical & Computer Engineering, The University of Alabama</p>
+          <p class="mb-2"><strong>Course:</strong> ECE 380 — Digital Logic</p>
+          <p class="mb-4"><strong>Duration:</strong> Spring 2023 – Ongoing</p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Assisted in lectures and supervised labs on logic design.</li>
+            <li>Evaluated assignments, projects, and exams with feedback.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">Lecturer</h3>
+          <p class="text-gray-600 mb-2">Department of Electrical and Electronic Engineering, Southern University Bangladesh</p>
+          <p class="mb-4"><strong>Duration:</strong> Aug 2022 – Dec 2022</p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Delivered lectures on circuit analysis and digital systems.</li>
+            <li>Designed and evaluated exams, assignments, and labs.</li>
+            <li>Mentored undergraduates in coursework and research.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Industry Experience Section -->
+<section id="industry" class="bg-gray-50 relative z-10 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Industry Experience</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Unipolar Automation -->
+      <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+        <h3 class="text-xl font-semibold mb-2">Automation Engineer</h3>
+        <p class="text-gray-600 mb-2">Unipolar Automation, Dhaka, Bangladesh</p>
+        <p class="mb-4"><strong>Duration:</strong> January 2021 – July 2022</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Developed and deployed industrial automation solutions using <strong>PLC, HMI, and SCADA</strong>.</li>
+          <li>Designed and maintained <strong>control panels, motor drives, and process automation</strong> systems.</li>
+          <li>Worked with <strong>Siemens</strong> and <strong>Allen Bradley PLCs</strong> for real-time control and monitoring.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-50 relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Technical Skills</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-6 flex items-center"><i data-feather="cpu" class="text-[#9E1B32] mr-3"></i>Technical</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">MATLAB/Simulink</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">Python</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">C++</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">OpenCV</span>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-6 flex items-center"><i data-feather="tool" class="text-[#9E1B32] mr-3"></i>Tools</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">ANSYS Maxwell</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">MotorCAD</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">COMSOL</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">CST Microwave Studio</span>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-6 flex items-center"><i data-feather="search" class="text-[#9E1B32] mr-3"></i>Research</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">Machine Design</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">Signal Processing</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">Optimization</span>
+            <span class="skill-pill bg-gray-200 px-4 py-2 rounded-full">Technical Writing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white relative z-10 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Get In Touch</h2>
+      <div class="md:flex">
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-center"><i data-feather="mail" class="text-[#9E1B32] mr-4"></i><span>sayemulalam34@gmail.com</span></div>
+            <div class="flex items-center"><i data-feather="map-pin" class="text-[#9E1B32] mr-4"></i><span>Department of Electrical and Computer Engineering<br>The University of Alabama<br>Tuscaloosa, AL 35487</span></div>
+            <div class="flex items-center"><i data-feather="phone" class="text-[#9E1B32] mr-4"></i><span>(659) 228-5503</span></div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-16" data-aos="fade-left">
+          <form class="space-y-6">
+            <div><label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label><input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></div>
+            <div><label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label><input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></div>
+            <div><label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label><input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></div>
+            <div><label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label><textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></textarea></div>
+            <button type="submit" class="bg-[#9E1B32] hover:bg-[#6E1323] text-white px-6 py-3 rounded-lg font-medium transition w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white relative z-10 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:justify-between items-center">
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <div class="text-2xl font-bold mb-2">
+            <span class="bg-[#9E1B32] px-3 py-1 rounded-lg">Research Portfolio</span> 
+          </div>
+          <p class="text-gray-400">PhD Student in Electrical & Computer Engineering</p>
+        </div>
+        <div class="flex justify-center md:justify-end space-x-6">
+          <a href="https://scholar.google.com/citations?user=B65pE24AAAAJ" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="book-open"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="github"></i></a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Sayem Ul Alam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    AOS.init();
+    feather.replace();
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      color: 0x9E1B32,  // UA Crimson
+      backgroundColor: 0x111827,
+      points: 12.00,
+      maxDistance: 22.00,
+      spacing: 17.00
+    });
+  </script>
+  <script>
+    // Counter animation
+    function animateCounter(id, endValue, duration) {
+      const obj = document.getElementById(id);
+      let startValue = 0;
+      let stepTime = Math.max(20, Math.floor(duration / endValue));
+      let timer = setInterval(() => {
+        startValue += 1;
+        obj.textContent = startValue;
+        if (startValue >= endValue) clearInterval(timer);
+      }, stepTime);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      animateCounter("pub-count", 20, 1500);  // Publications
+      animateCounter("proj-count", 6, 1200);  // Research projects
+      animateCounter("nsf-count", 1, 800);    // NSF grants
+    });
+  </script>
+</body>
+</html>
